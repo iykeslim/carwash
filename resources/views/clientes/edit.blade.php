@@ -9,7 +9,7 @@
             <div class="col-8 offset-2">
 
                 <div class="row">
-                    <h1>Editar Cliente</h1>
+                    <h1>Client Edit</h1>
                 </div>
 
                 <div class="form-group row">

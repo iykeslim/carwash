@@ -9,11 +9,11 @@
             <div class="col-8 offset-2">
 
                 <div class="row">
-                    <h1>Editar Turno</h1>
+                    <h1>Turn</h1>
                 </div>
 
                 <div class="form-group row">
-                    <label for="vehicle_types_id" class="col-md-4 col-form-label text-md-right">Tipo de Veiculo</label>
+                    <label for="vehicle_types_id" class="col-md-4 col-form-label text-md-right">Type of vehicle</label>
 
                     <div class="col-md-6">
                         <input id="vehicle_types_id" type="text"
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="marcas_id" class="col-md-4 col-form-label text-md-right">Marca</label>
+                    <label for="marcas_id" class="col-md-4 col-form-label text-md-right">Mark</label>
 
                     <div class="col-md-6">
                         <input id="marcas_id" type="text" class="form-control @error('marcas_id') is-invalid @enderror"
@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="model_types_id" class="col-md-4 col-form-label text-md-right">Modelo</label>
+                    <label for="model_types_id" class="col-md-4 col-form-label text-md-right">Model</label>
 
                     <div class="col-md-6">
                         <input id="model_types_id" type="text"
@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="matricula" class="col-md-4 col-form-label text-md-right">Matricula</label>
+                    <label for="matricula" class="col-md-4 col-form-label text-md-right">Enrollment</label>
 
                     <div class="col-md-6">
                         <input id="matricula" type="matricula"
@@ -95,7 +95,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="fecha" class="col-md-4 col-form-label text-md-right">Fecha</label>
+                    <label for="fecha" class="col-md-4 col-form-label text-md-right">Date</label>
 
                     <div class="col-md-6">
                         <input id="fecha" type="date" class="form-control @error('fecha_turno') is-invalid @enderror"
@@ -110,7 +110,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="hora" class="col-md-4 col-form-label text-md-right">Hora</label>
+                    <label for="hora" class="col-md-4 col-form-label text-md-right">Hour</label>
 
                     <div class="col-md-6">
                         <select name="hora" id="hora" class="form-control  @error('hora') is-invalid @enderror"
@@ -131,7 +131,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="wash_types_id" class="col-md-4 col-form-label text-md-right">Tipo de Lavado</label>
+                    <label for="wash_types_id" class="col-md-4 col-form-label text-md-right">Type of washing</label>
 
                     <div class="col-md-6">
                         <select name="wash_types_id" id="wash_types_id"
@@ -159,7 +159,7 @@
                                 {{ old('recepcionar') ? 'checked' : '' }}>
 
                             <label class="form-check-label" for="recepcionar">
-                                {{ __('Recepcionar') }}
+                                {{ __('Reciprocate') }}
                             </label>
                         </div>
                     </div>
@@ -169,10 +169,10 @@
                     <div class="col col-7 offset-3 d-flex align-items-baseline justify-content-between">
 
                         <button type="submit" class="btn btn-primary"
-                            style="color: rgb(233, 225, 235)">Actualizar</button>
+                            style="color: rgb(233, 225, 235)">Update</button>
 
                         <a href="{{route('client.show',['client'=>$turno->client_id])}}"
-                            class="btn btn-md btn-primary rounded" style="color: rgb(233, 225, 235)">Regresar</a>
+                            class="btn btn-md btn-primary rounded" style="color: rgb(233, 225, 235)">Go Back</a>
                     </div>
                 </div>
 

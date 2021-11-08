@@ -5,17 +5,17 @@
     <div class="row">
         <div class="col col-12">
             <hr>
-            <h2 class="intro-text text-center">Listado de Turnos</strong></h2>
+            <h2 class="intro-text text-center">List of shifts</strong></h2>
             <hr>
         </div>
 
         <div class="row col col-3 mb-2" style="left: 41%">
             <form class="form-inline">
 
-                <input name="fecha" class="form-control mr-sm-2" type="date" placeholder="Buscar por fecha"
+                <input name="fecha" class="form-control mr-sm-2" type="date" placeholder="Search by date"
                     aria-label="Search">
 
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Filtrar</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Filter</button>
             </form>
             <hr>
         </div>
@@ -26,18 +26,18 @@
             <table class="table table-bordered table-striped">
                 <thead class="">
                     <tr>
-                        <th>Identificador</th>
-                        <th>Cliente</th>
-                        <th>TipoVeiculo</th>
-                        <th>Marca</th>
-                        <th>Modelo</th>
+                        <th>Identifier</th>
+                        <th>Customer</th>
+                        <th>Typesulo</th>
+                        <th>Mark</th>
+                        <th>Model</th>
                         <th>Color</th>
-                        <th>Matricula</th>
-                        <th>Hora</th>
-                        <th>Lavado</th>
-                        <th>Precio</th>
-                        <th>Recepcionado</th>
-                        <th colspan="2" style="text-align: center;">Acciones</th>
+                        <th>Enrollment</th>
+                        <th>Hour</th>
+                        <th>Washed</th>
+                        <th>Price</th>
+                        <th>Reception</th>
+                        <th colspan="2" style="text-align: center;">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -60,14 +60,14 @@
                         </td> --}}
                         <td style="text-align: center">
                             @if ($turno->recepcionado)
-                            Recepcionado
+                            Reception
                             @else
-                            No Recepcionado
+                            No Reception
                             @endif
                         </td>
                         <td>
                             <a href="{{route('turno.edit',['turno'=>$turno->id])}}" class="btn btn-sm waves-effect waves-ligh border border-secondary rounded
-                                @if ($turno->recepcionado) disabled @endif" style="color: rgb(121, 61, 22)">Editar</a>
+                                @if ($turno->recepcionado) disabled @endif" style="color: rgb(121, 61, 22)">Edit</a>
                         </td>
 
                         <td>
@@ -77,7 +77,7 @@
                                 <button type="submit" @if ($turno->recepcionado) disabled @endif
                                     class="btn btn-sm waves-effect waves-ligh border border-secondary rounded"
                                     style="color: rgb(61, 46, 85)"
-                                    onclick="return confirm('Está seguro de eliminar esta Truno?');">Cancelar</button>
+                                    onclick="return confirm('Are you sure to remove this turn?');">Cancel</button>
                             </form>
                         </td>
                     </tr>

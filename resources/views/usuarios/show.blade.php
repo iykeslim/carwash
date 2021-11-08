@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col col-12">
             <hr>
-        <h2 class="intro-text text-center">Detalles del usuario  <strong>{{$systemUser->user->name}}</strong></h2>
+        <h2 class="intro-text text-center">Details of the user  <strong>{{$systemUser->user->name}}</strong></h2>
             <hr>
         </div>
 

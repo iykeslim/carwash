@@ -5,10 +5,10 @@
     <div class="row">
         <div class="col col-12">
             <hr>
-        <h2 class="intro-text text-center">Listado de Usuarios</strong></h2>
+        <h2 class="intro-text text-center">List of users</strong></h2>
             <hr>
         </div>
-        <div><a href="{{route('systemUser.create')}}" class="btn btn-sm waves-effect waves-ligh  border border-secondary rounded">Añadir Usuario</a></div>
+        <div><a href="{{route('systemUser.create')}}" class="btn btn-sm waves-effect waves-ligh  border border-secondary rounded">Add user</a></div>
         <div class="row pt-2 col-12">
             <hr style="width: 100%">
             <table class="table table-bordered table-striped">
@@ -39,7 +39,7 @@
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-sm waves-effect waves-ligh  border border-secondary rounded"
-                            style="color: rgb(61, 46, 85)"  onclick="return confirm('Está seguro de eliminar esta Usuario?');">Delete</button>
+                            style="color: rgb(61, 46, 85)"  onclick="return confirm('You are sure to delete this user?');">Delete</button>
                             </td>
                         </form>
 

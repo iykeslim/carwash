@@ -9,11 +9,11 @@
             <div class="col-8 offset-2">
 
                 <div class="row">
-                    <h1>Editar Marca</h1>
+                    <h1>Edit brand</h1>
                 </div>
 
                 <div class="form-group row">
-                    <label for="tipo_marca" class="col-md-4 col-form-label text-md-right">Nombre</label>
+                    <label for="tipo_marca" class="col-md-4 col-form-label text-md-right">Name</label>
 
                     <div class="col-md-6">
                         <input id="tipo_marca" type="text" class="form-control @error('tipo_marca') is-invalid @enderror"
@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="row pt-4">
-                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
                 </div>
 
             </div>

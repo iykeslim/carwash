@@ -9,11 +9,11 @@
             <div class="col-8 offset-2">
 
                 <div class="row">
-                    <h1>Editar Lavado</h1>
+                    <h1>Edit Wash</h1>
                 </div>
 
                 <div class="form-group row">
-                    <label for="tipo_lavado" class="col-md-4 col-form-label text-md-right">Nombre</label>
+                    <label for="tipo_lavado" class="col-md-4 col-form-label text-md-right">Name</label>
 
                     <div class="col-md-6">
                         <input id="tipo_lavado" type="text" class="form-control @error('tipo_lavado') is-invalid @enderror"
@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="precio" class="col-md-4 col-form-label text-md-right">Precio</label>
+                    <label for="precio" class="col-md-4 col-form-label text-md-right">Price</label>
 
                     <div class="col-md-6">
                         <input id="precio" type="text" class="form-control @error('precio') is-invalid @enderror"
@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="row pt-4">
-                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
 
             </div>

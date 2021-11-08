@@ -14,12 +14,12 @@
             <table class="table table-bordered table-striped">
                 <thead class="">
                     <tr>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
+                        <th>Name</th>
+                        <th>Last name</th>
                         <th>DNI</th>
                         <th>Email</th>
-                        <th>Detalles</th>
-                        <th>Eliminar</th>
+                        <th>Details</th>
+                        <th>Remove</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,13 +31,13 @@
                         <td>{{$client->user->email}}</td>
                         <td><a href="{{route('client.show',['client'=>$client->id])}}"
                             class="btn btn-sm waves-effect waves-ligh  border border-secondary rounded"
-                            style="color: rgb(121, 61, 22)">Detalle</a></td>
+                            style="color: rgb(121, 61, 22)">Detail</a></td>
                         <td>
                             <form action="{{route('client.destroy',['client'=>$client->id])}}" method="POST">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-sm waves-effect waves-ligh  border border-secondary rounded"
-                            style="color: rgb(61, 46, 85)" onclick="return confirm('Está seguro de eliminar este Cliente? También se eliminaran los turnos reservados a su nombre');">Eliminar</button>
+                            style="color: rgb(61, 46, 85)" onclick="return confirm('Are you sure about deleting this client?The shifts reserved in their name will also be eliminated');">Remove</button>
                             </td>
                         </form>
 
