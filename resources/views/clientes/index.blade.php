@@ -5,10 +5,10 @@
     <div class="row">
         <div class="col col-12">
             <hr>
-        <h2 class="intro-text text-center">Listado de Clientes</strong></h2>
+        <h2 class="intro-text text-center">List of customers</strong></h2>
             <hr>
         </div>
-        <div><a href="/client/create" class="btn btn-sm waves-effect waves-ligh  border border-secondary rounded">Añadir Cliente</a></div>
+        <div><a href="/client/create" class="btn btn-sm waves-effect waves-ligh  border border-secondary rounded">Add client</a></div>
         <div class="row pt-2 col-12">
             <hr style="width: 100%">
             <table class="table table-bordered table-striped">
@@ -16,7 +16,7 @@
                     <tr>
                         <th>Name</th>
                         <th>Last name</th>
-                        <th>DNI</th>
+                        <th>Driver's License Number</th>
                         <th>Email</th>
                         <th>Details</th>
                         <th>Remove</th>

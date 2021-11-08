@@ -49,6 +49,6 @@ class disponible implements Rule
      */
     public function message()
     {
-        return 'Este horario está tomado.';
+        return 'This schedule is taken.';
     }
 }

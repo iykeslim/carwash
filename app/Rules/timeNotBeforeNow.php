@@ -82,6 +82,6 @@ class timeNotBeforeNow implements Rule
      */
     public function message()
     {
-        return 'No se puede reservar una hora pasada.';
+        return 'You can not book a past hour.';
     }
 }

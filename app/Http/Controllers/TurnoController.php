@@ -80,7 +80,7 @@ class TurnoController extends Controller
             'wash_types_id' => ['required'],
             'precio' => ['required'],
             'color' => ['required'],
-            'matricula' => ['required', 'regex:/([A-Z]{2})([0-9]{3})([A-Z]{2})$|([A-Z]{3})([0-9]{3})$/i'],
+            'matricula' => ['required'],
             'fecha_turno' => ['required', Rule::unique('turnos'), new sunday()],
             'identificador' => ['unique:turnos'],
             'client_id' => ['required'],
@@ -132,7 +132,7 @@ class TurnoController extends Controller
             'recepcionado' => ['required'],
             'precio' => ['required'],
             'color' => ['required'],
-            'matricula' => ['required', 'regex:/([A-Z]{2})([0-9]{3})([A-Z]{2})$|([A-Z]{3})([0-9]{3})$/i'],
+            'matricula' => ['required'],
             'fecha_turno' => ['required', Rule::unique('turnos')->ignore($turno->id), new sunday()],
             'identificador' => ['unique:turnos', Rule::unique('trunos')->ignore($turno->id)],
         ])->validate();

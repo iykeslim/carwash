@@ -36,6 +36,6 @@ class sunday implements Rule
      */
     public function message()
     {
-        return 'El domingo es de descanso.';
+        return 'Sunday is resting.';
     }
 }

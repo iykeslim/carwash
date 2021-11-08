@@ -28,7 +28,7 @@
                     <tr>
                         <th>Identifier</th>
                         <th>Customer</th>
-                        <th>Typesulo</th>
+                        <th>Type of Vehicle</th>
                         <th>Mark</th>
                         <th>Model</th>
                         <th>Color</th>

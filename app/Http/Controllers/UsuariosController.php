@@ -43,7 +43,7 @@ class UsuariosController extends Controller
         $user = request()->validate([
             'name' => 'required|string|max:255',
             'lastname' => 'required|string|max:255',
-            'dni' => 'required|string|max:255|unique:users|regex:/([0-9]{2})([.])([0-9]{3})([.])([0-9]{3})$/i',
+            'dni' => 'required|string|max:255|unique:users',
             'email' => 'required|string|email|max:255|unique:users',
         ]);
 
@@ -86,7 +86,7 @@ class UsuariosController extends Controller
         $userdata = request()->validate([
             'name' => 'required|string|max:255',
             'lastname' => 'required|string|max:255',
-            'dni' => ['required', 'string', 'max:255', Rule::unique('users')->ignore($systemUser->user->id), 'regex:/([0-9]{2})([.])([0-9]{3})([.])([0-9]{3})$/i'],
+            'dni' => ['required', 'string', 'max:255', Rule::unique('users')->ignore($systemUser->user->id)],
             'email' => ['required', 'string', 'email', 'max:255', Rule::unique('users')->ignore($systemUser->user->id)],
         ]);
 

@@ -29,7 +29,7 @@
                         <td>{{$washType->precio}}</td>
                         <td><a href="{{route('washType.edit',['washType'=>$washType->id])}}"
                             class="btn btn-sm waves-effect waves-ligh  border border-secondary rounded"
-                            style="color: rgb(121, 61, 22)">Editar</a></td>
+                            style="color: rgb(121, 61, 22)">Edit</a></td>
                         <td>
                             <form action="{{route('washType.destroy',['washType'=>$washType->id])}}" method="POST">
                             @csrf
