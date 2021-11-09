@@ -1,5 +1,46 @@
 @extends('layouts.app')
+@section('navbar')
+<nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+    <div class="sb-sidenav-menu">
+        <div class="nav">
+            <div class="sb-sidenav-menu-heading">Core</div>
+            <a class="nav-link" href="{{route('systemUser.index')}}">
+                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                Manage Users
+            </a>
+            <a class="nav-link" href="{{route('client.index')}}">
+                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                Manage Clients
+            </a>
+            <a class="nav-link" href="{{route('turno.index')}}">
+                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                Manage Turns
+            </a>
+            <a class="nav-link" href="{{route('marca.index')}}">
+                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                Manage Brands
+            </a>
+            <a class="nav-link" href="{{route('modelo.index')}}">
+                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                Manage Models
+            </a>
+            <a class="nav-link" href="{{route('vehicleType.index')}}">
+                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                Manage Vehicles
+            </a>
+            <a class="nav-link" href="{{route('washType.index')}}">
+                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                Manage Wash Types
+            </a>
 
+            <div class="sb-sidenav-footer">
+                <div class="small">Logged in as:</div>
+                {{ Auth::user()->name }}
+            </div>
+        </div>
+    </div>
+</nav>
+@endsection
 @section('content')
 <div class="container">
     <form action="{{route('washType.store')}}" method="POST">

@@ -47,7 +47,8 @@
         </nav>
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+                @yield('navbar')
+                {{-- <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
@@ -113,7 +114,7 @@
                         <div class="small">Logged in as:</div>
                         {{ Auth::user()->name }}
                     </div>
-                </nav>
+                </nav> --}}
             </div>
             <div id="layoutSidenav_content">
                 <main>
