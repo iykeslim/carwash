@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
         <title>Register | Express</title>
         <link href="{{ asset('layout/css/styles.css') }}" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
@@ -20,7 +24,8 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5 mb-3">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Account</h3></div>
                                     <div class="card-body">
-                                        <form>
+                                        <form method="POST" action="{{ route('register') }}">
+                                            @csrf
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
@@ -76,7 +81,7 @@
                                                 </span>
                                                 @enderror
                                             </div>
-                                            
+
                                             <div class="form-floating mb-3">
                                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
                                                 <label for="inputEmail">Email address</label>
@@ -109,8 +114,8 @@
                                             <div class="mt-4 mb-0">
                                                 <div class="d-grid"><button type="submit" class="btn btn-primary btn-block" style="background-color: orange; border-color: orange;">{{ __('Register') }}</button></div>
                                             </div>
-                                            
-                                
+
+
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
@@ -141,3 +146,4 @@
         <script src="{{ asset('layout/js/scripts.js') }}"></script>
     </body>
 </html>
+
